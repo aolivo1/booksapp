@@ -1,5 +1,5 @@
 var mongoose = require('mongoose');
-var dbHost = 'mongodb://CHANGEME-db-lb.gbscloud.local:27017/Books';
+var dbHost = 'mongodb://CHANGEME:27017/Books';
 mongoose.connect(dbHost, { useNewUrlParser: true } );
 mongoose.connection;
 mongoose.set('debug', true);
