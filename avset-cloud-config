@@ -1,0 +1,10 @@
+#cloud-config
+packages:
+  - mongodb
+  - vim
+  - wget
+  - curl
+
+runcmd:
+ - sed -i -e 's/bind_ip/\#bind_ip/g' /etc/mongodb.conf
+ - sudo /etc/init.d/mongodb restart
